@@ -39,6 +39,22 @@ $(document).ready(function () {
     }
   };
 
+  $('.time-block').each(function(){
+    // Get current hour
+    var currHour = dayjs().format('H');
+
+    // Get timeblock hour
+    var compareHour = $(this).attr('id').split('-')[1];
+
+    if (currHour == compareHour){
+      $(this).addClass('present');
+    } else if (currHour > compareHour) {
+      $(this).addClass('past');
+    } else {
+      $(this).addClass('future');
+    }
+  })
+
   // Display current date in header of page
   function displayDate() {
     var currDate = dayjs();
