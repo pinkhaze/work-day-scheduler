@@ -18,33 +18,28 @@ $(document).ready(function () {
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
 
-  // Save click events in local storage
   $('.saveBtn').on('click', function () {
-    // Starting at button element, traverse to its immediate parent (<div id="hour-9" class="row time-block">)
+    // Starting at clicked button element, traverse to its immediate parent (<div id="hour-x" class="row time-block">)
     // Grab id attribute
     var timeBlock = $(this).parent().attr('id'); // could also use data()
-    // Starting at button element, traverse to its sibling w/ the the 'description' class
+    // Starting at clicked button element, traverse to its sibling with class="description"
     // Grab user input
-    var timeBlockText = $(this).siblings('.description').val();
+    var userText = $(this).siblings('.description').val();
+  
 
     // Save input in local storage
-    localStorage.setItem(timeBlock, timeBlockText);
-
-  })
+    localStorage.setItem(timeBlock, userText);
+  });
 
   // Display current date in header of page
   function displayDate() {
     var currDate = dayjs();
-    $('#currentDay').text(currDate.format('dddd, MMMM'));
+    $('#currentDay').text(currDate.format('dddd, MMMM DD'));
   }
-
-  displayDate();
 
   // Update displayed date every minute
   setInterval(displayDate, 60000);
 
+  displayDate();
+
 });
-
-
-
-
