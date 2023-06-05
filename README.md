@@ -1,5 +1,5 @@
 # Work Day Scheduler
-Third-Party APIs: Word Day Scheduler
+Third-Party APIs: Work Day Scheduler
 
 ## Description
 
