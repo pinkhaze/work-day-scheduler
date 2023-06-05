@@ -31,6 +31,14 @@ $(document).ready(function () {
     localStorage.setItem(timeBlock, userText);
   });
 
+  function printData () {
+    for (var i = 9; i < 18; i++) {
+      var timeBlockText = localStorage.getItem('hour-'+ i);
+      console.log(timeBlockText);
+      $('#hour-'+ i + ' .description').val(timeBlockText);
+    }
+  };
+
   // Display current date in header of page
   function displayDate() {
     var currDate = dayjs();
@@ -40,6 +48,7 @@ $(document).ready(function () {
   // Update displayed date every minute
   setInterval(displayDate, 60000);
 
+  printData();
   displayDate();
 
 });
