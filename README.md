@@ -26,3 +26,8 @@ In order to meet requirements, the deployed work day scheduler application shoul
 [Click here to see the deployed application](https://pinkhaze.github.io/work-day-scheduler/)
 
 ## Usage
+
+![screenshot-1](https://github.com/pinkhaze/work-day-scheduler/assets/55771228/7f3cd1ac-fdf7-4e7f-8c01-64c26266efd1)
+
+![screenshot-2](https://github.com/pinkhaze/work-day-scheduler/assets/55771228/2777b4e2-522c-47d7-a68e-d7713fdb67e7)
+
