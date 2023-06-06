@@ -31,3 +31,7 @@ In order to meet requirements, the deployed work day scheduler application shoul
 
 ![screenshot-2](https://github.com/pinkhaze/work-day-scheduler/assets/55771228/2777b4e2-522c-47d7-a68e-d7713fdb67e7)
 
+## Credits
+
+Jili Jiang (tutor): help with setting and getting key-value pairs for timeblocks and user input.
+
