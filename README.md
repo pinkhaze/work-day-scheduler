@@ -13,9 +13,9 @@ In order to meet requirements, the deployed work day scheduler application shoul
  * displays the current date at the top of the webpage
  * displays a set of timeblocks matching standard business hours 
  * the timeblocks are color coded to reflect the following:
-        * gray: past timeblock
-        * red: present timeblock
-        * green: future timeblock
+        - gray: past timeblock
+        - red: present timeblock
+        - green: future timeblock
  * allows the user to click on a timeblock and enter an event
  * clicking the save button for a timeblock saves the text for the even in local storage
  * refreshing the page 
